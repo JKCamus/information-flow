@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 const Home = () => import('views/information.vue')
+const  Detail= () => import('views/childComps/detail.vue')
 
 
 const originalReplace = VueRouter.prototype.replace;
@@ -21,7 +22,15 @@ const routes = [{
     meta: {
       title: "Info"
     }
+  },
+  {
+    path: '/detail',
+    component: Detail,
+    meta: {
+      title: "detail"
+    }
   }
+
 
 
 ]
