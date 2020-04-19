@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 const Home = () => import('views/information.vue')
-const  Detail= () => import('views/childComps/detail.vue')
+const  Chat= () => import('views/childComps/Chat.vue')
 
 
 const originalReplace = VueRouter.prototype.replace;
@@ -14,7 +14,7 @@ Vue.use(VueRouter)
 // 2.1创建routers映射
 const routes = [{
     path: "/",
-    redirect: '/home'
+    redirect: '/Chat'
   },
   {
     path: '/home',
@@ -24,10 +24,10 @@ const routes = [{
     }
   },
   {
-    path: '/detail',
-    component: Detail,
+    path: '/Chat',
+    component: Chat,
     meta: {
-      title: "detail"
+      title: "Chat"
     }
   }
 

@@ -1,7 +1,7 @@
 <template>
   <div class="list-item">
     <div class="item-img">
-      <img :src="messageItem.img" alt="商品图片">
+      <img :src="messageItem.img" alt="messageImg">
     </div>
     <div class="item-info">
       <div class="item-title">{{messageItem.title}}</div>

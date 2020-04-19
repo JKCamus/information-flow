@@ -1,6 +1,6 @@
 <template>
   <div id="home" path="/home">
-    <scroll class="content" ref="scroll" >
+    <scroll class="content" ref="scroll">
       <list :showMessage="message"></list>
       <!-- <div>{{message[0].img}}</div> -->
       <ul>
@@ -98,12 +98,11 @@
     height: 100vh;
     position: relative;
   }
+
   .content {
     overflow: hidden;
     position: absolute;
-    /* position: fixed; */
-/* height: 400px; */
-
+    /* height: 400px; */
     top: 44px;
     bottom: 0;
     left: 0;
