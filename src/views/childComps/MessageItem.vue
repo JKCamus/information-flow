@@ -36,16 +36,17 @@
     padding: 5px;
     border-bottom: 1px solid #ccc;
   }
+
   .item-title,
   .item-desc {
     overflow: hidden;
-    /* white-space: nowrap; */
     -webkit-line-clamp: 2;
     line-clamp: 2;
     -ms-text-overflow: ellipsis;
     text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-break: break-all;
     display: -webkit-box;
-
   }
 
   .item-title {

@@ -3,7 +3,6 @@
 
 
     <message-item v-for="item in showMessage" :message-item="item"></message-item>
-    {{showMessage[0]}}
 
   </div>
 </template>
